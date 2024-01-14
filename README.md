@@ -1,2 +1,2 @@
-search code by grep, for example:
-grep -inr --include \*.c --include \*.cpp XXX . -rn
+search code by grep:
+grep --include \*.c --include \*.cpp --exclude glad.c --exclude glew.c XXX . -rn
