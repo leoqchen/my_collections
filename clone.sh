@@ -33,6 +33,9 @@ if [ ! -e gl/superbible7-media.zip ]; then
   cd gl; wget http://openglsuperbible.com/files/superbible7-media.zip; unzip superbible7-media.zip -d openglsb7/bin/media/; cd ../
 fi
 
+# math
+#----------
+clone https://github.com/datenwolf/linmath.h.git math/linmath.h
 
 # perf
 #-----------
