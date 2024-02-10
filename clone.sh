@@ -41,4 +41,9 @@ clone https://github.com/datenwolf/linmath.h.git math/linmath.h
 #-----------
 clone https://github.com/brendangregg/FlameGraph.git perf/FlameGraph
 
+# cmake
+#-----------
+if [ ! -d cmake/cmake-3.28.3-tutorial-source ]; then
+  cd cmake; unzip -q cmake-3.28.3-tutorial-source.zip;  cd ../
+fi
 
