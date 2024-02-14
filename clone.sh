@@ -36,6 +36,7 @@ fi
 # math
 #----------
 clone https://github.com/datenwolf/linmath.h.git math/linmath.h
+clone https://github.com/g-truc/glm.git math/glm
 
 # perf
 #-----------
