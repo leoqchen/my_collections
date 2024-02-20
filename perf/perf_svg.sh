@@ -1,6 +1,9 @@
 #!/bin/bash
 
-FlameGraph=(FlameGraph path)
+# get script current path
+dir=`dirname $0`
+
+FlameGraph=`realpath $dir/FlameGraph/`
 PerfData=perf.data
 
 while [ "$1" != "" ]; do
