@@ -38,6 +38,12 @@ fi
 clone https://github.com/datenwolf/linmath.h.git math/linmath.h
 clone https://github.com/g-truc/glm.git math/glm
 
+# image
+#----------
+clone https://github.com/nothings/stb.git image/stb
+clone https://github.com/richgel999/jpeg-compressor.git image/jpeg-compressor
+clone https://github.com/pnggroup/libpng.git image/libpng
+
 # perf
 #-----------
 clone https://github.com/brendangregg/FlameGraph.git perf/FlameGraph
