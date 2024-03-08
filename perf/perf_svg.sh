@@ -1,15 +1,29 @@
 #!/bin/bash
 
 # get script current path
-dir=`dirname $0`
+script_path=$0
+if [ -L $script_path ]; then
+  # is symbol link
+  script_path=`realpath $script_path`
+fi
+#echo "script_path=$script_path"
+dir=`dirname $script_path`
+
+
 
 FlameGraph=`realpath $dir/FlameGraph/`
-PerfData=perf.data
 
+PerfData=perf.data
 while [ "$1" != "" ]; do
 	PerfData=$1
 	shift 1
 done
+
+if [ ! -e $PerfData ]; then
+  echo "perf.data is not found !!!, do nothing"
+  exit
+fi
+
 
 #perf record -g -p pid
 perf script -i $PerfData &> perf.unfold
