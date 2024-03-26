@@ -1,0 +1,5 @@
+# ~/.ssh/config
+  Host localhost
+    HostName localhost
+    User leochen
+    Port 2222
