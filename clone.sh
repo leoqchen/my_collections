@@ -18,7 +18,8 @@ clone()
 # gl
 #-----------
 clone https://github.com/JoeyDeVries/LearnOpenGL.git gl/LearnOpenGL
-clone git://anongit.freedesktop.org/git/mesa/demos gl/mesa_demo
+clone git://anongit.freedesktop.org/git/mesa/demos gl/mesa_demos_cmake
+clone https://gitlab.freedesktop.org/mesa/demos.git gl/mesa_demos_meson
 clone https://github.com/danginsburg/opengles3-book.git gl/opengles3-book
 clone https://github.com/g-truc/ogl-samples.git gl/ogl-samples
 clone https://github.com/leoqchen/openglrb4.git gl/openglrb4
