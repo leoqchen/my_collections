@@ -55,3 +55,12 @@ if [ ! -d cmake/cmake-3.28.3-tutorial-source ]; then
   cd cmake; unzip -q cmake-3.28.3-tutorial-source.zip;  cd ../
 fi
 
+# ReverseEngineering
+#--------------------
+clone https://github.com/envytools/valgrind.git RE/valgrind-mmt
+if [ ! -e RE/renouveau ]; then
+  mkdir -p RE
+  cd RE
+  cvs -z3 -d:pserver:anonymous@nouveau.cvs.sourceforge.net:/cvsroot/nouveau co -P renouveau
+  cd ..
+fi
