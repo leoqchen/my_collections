@@ -34,6 +34,12 @@ if [ ! -e gl/superbible7-media.zip ]; then
   cd gl; wget http://openglsuperbible.com/files/superbible7-media.zip; unzip superbible7-media.zip -d openglsb7/bin/media/; cd ../
 fi
 
+# vulkan
+#-----------
+clone https://github.com/KhronosGroup/Vulkan-Samples.git vulkan/Vulkan-Samples
+clone https://github.com/Overv/VulkanTutorial.git vulkan/VulkanTutorial
+clone "https://github.com/vblanco20-1/vulkan-guide.git -b all-chapters-2" vulkan/vulkan-guide
+
 # math
 #----------
 clone https://github.com/datenwolf/linmath.h.git math/linmath.h
