@@ -70,3 +70,9 @@ if [ ! -e RE/renouveau ]; then
   cvs -z3 -d:pserver:anonymous@nouveau.cvs.sourceforge.net:/cvsroot/nouveau co -P renouveau
   cd ..
 fi
+
+
+# C
+#--------------------
+clone https://github.com/stclib/STC.git c/STC
+
