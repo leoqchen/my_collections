@@ -72,7 +72,12 @@ if [ ! -e RE/renouveau ]; then
 fi
 
 
-# C
+# C 
 #--------------------
 clone https://github.com/stclib/STC.git c/STC
+
+
+# hook
+#--------------------
+clone https://github.com/yasukata/zpoline.git hook/zpoline
 
