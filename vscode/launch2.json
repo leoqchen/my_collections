@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "hook triangle_gl",
+            "type":"cppdbg",
+            "request": "launch",
+            "program": "hello_gfx/build/triangle_gl",
+            "args": ["-v", "-n", "4"],
+            "stopAtEntry": true,
+            "cwd": "${fileDirname}",
+            "environment": [
+                {
+                    "name": "LIBZPHOOK",
+                    "value": "/home/qunquchen/wrk/xdx/SampleCode/cqq/my_hook/apps/gpu_driver/libzphook_basic.so"
+                },
+                {
+                    "name": "LD_PRELOAD",
+                    "value": "/home/qunquchen/wrk/xdx/SampleCode/cqq/my_hook/zpoline/libzpoline.so"
+                }
+            ],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}
