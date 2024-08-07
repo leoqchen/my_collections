@@ -29,6 +29,7 @@ clone https://github.com/glfw/glfw.git gl/glfw
 clone https://github.com/freeglut/freeglut.git gl/freeglut
 clone https://gitlab.freedesktop.org/mesa/glu.git gl/glu
 clone https://github.com/KhronosGroup/VK-GL-CTS.git gl/VK-GL-CTS
+clone https://gitlab.freedesktop.org/mesa/piglit gl/piglit
 
 if [ ! -e gl/superbible7-media.zip ]; then
   cd gl; wget http://openglsuperbible.com/files/superbible7-media.zip; unzip superbible7-media.zip -d openglsb7/bin/media/; cd ../
