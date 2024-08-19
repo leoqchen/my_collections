@@ -82,3 +82,10 @@ clone https://github.com/stclib/STC.git c/STC
 #--------------------
 clone https://github.com/yasukata/zpoline.git hook/zpoline
 
+# SoftRenderer
+#--------------------
+clone https://github.com/cadenji/foolrenderer.git SoftRenderer/foolrenderer
+clone https://github.com/zauonlok/renderer.git SoftRenderer/renderer
+clone https://github.com/ssloy/tinyrenderer.git SoftRenderer/tinyrenderer
+
+
