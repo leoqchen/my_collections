@@ -31,7 +31,7 @@ packages="\
   gnome-shell-extensions gnome-shell-extension-manager
   virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso virtualbox-guest-x11
   manpages manpages-dev manpages-posix manpages-posix-dev
-  make cmake cmake-qt-gui meson ninja-build autoconf automake
+  make cmake cmake-qt-gui meson ninja-build autoconf automake bear
   gcc g++ gdb gcc-i686-linux-gnu
   linux-tools-common linux-tools-generic linux-tools-`uname -r`
   openssh-client openssh-server
