@@ -18,11 +18,12 @@
 #     https://vulkan.lunarg.com/sdk/home
 
 packages="\
-  synaptic \
+  synaptic
   git gitk
   vim vim-scripts exuberant-ctags
   tree
   calc
+  curl
   meld
   gparted
   nautilus-dropbox
@@ -35,12 +36,16 @@ packages="\
   linux-tools-common linux-tools-generic linux-tools-`uname -r`
   openssh-client openssh-server
   locales symlinks cgpt linux-firmware ubuntu-minimal net-tools rsync
-  python3 python3-pip python-is-python3 python3-libxml2
+  python3 python3-pip python-is-python3 python3-libxml2 python3-mako
   libtool flex bison gawk binfmt-support texinfo autopoint gperf intltool xfonts-utils xsltproc x11-xkb-utils
   libdrm-dev libunwind-dev zlib1g-dev libelf-dev libncurses-dev libssl-dev xutils-dev libglib2.0-dev libltdl-dev
   mesa-utils mesa-common-dev libopengl-dev libgl1-mesa-dev libgles-dev libgles1 libgles2-mesa-dev libegl-dev libegl1-mesa-dev libglu1-mesa libgdm-dev libglvnd-core-dev libvulkan-dev opencl-headers libglfw3 libglfw3-dev libsdl2-dev freeglut3-dev xorg-dev
   libassimp-dev libfreetype-dev libxmu-dev libsimdjson-dev libgltf-dev
   glmark2-x11 glmark2-es2-x11
   libjack-dev libpipewire-0.3-dev
+  rustc rustfmt bindgen
   "
 sudo apt install $packages
+
+# 需要在源那里enable Source code
+sudo apt build-dep mesa
