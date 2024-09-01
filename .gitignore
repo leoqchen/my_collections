@@ -1,10 +1,11 @@
+asset/
 c/
 cmake/
 gl/
 hook/
-image/
 math/
 perf/
 RE/
 vulkan/
 SoftRenderer/
+shader/

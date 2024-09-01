@@ -5,7 +5,7 @@ set -x #echo command executed
 clone()
 {
   if [ ! -e $2 ]; then
-    git clone $1 $2
+    git clone --recursive $1 $2
 
     # other optional 
     if [ ! -z "$3" ]; then
@@ -41,16 +41,21 @@ clone https://github.com/KhronosGroup/Vulkan-Samples.git vulkan/Vulkan-Samples
 clone https://github.com/Overv/VulkanTutorial.git vulkan/VulkanTutorial
 clone "https://github.com/vblanco20-1/vulkan-guide.git -b all-chapters-2" vulkan/vulkan-guide
 
+# shader
+#-----------
+clone https://github.com/KhronosGroup/glslang.git shader/glslang "cd shader/glslang; ./update_glslang_sources.py; cd ../../"
+
 # math
 #----------
 clone https://github.com/datenwolf/linmath.h.git math/linmath.h
 clone https://github.com/g-truc/glm.git math/glm
 
-# image
+# asset
 #----------
-clone https://github.com/nothings/stb.git image/stb
-clone https://github.com/richgel999/jpeg-compressor.git image/jpeg-compressor
-clone https://github.com/pnggroup/libpng.git image/libpng
+clone https://github.com/nothings/stb.git asset/stb
+clone https://github.com/richgel999/jpeg-compressor.git asset/jpeg-compressor
+clone https://github.com/pnggroup/libpng.git asset/libpng
+clone https://github.com/assimp/assimp.git asset/assimp
 
 # perf
 #-----------
@@ -87,5 +92,6 @@ clone https://github.com/yasukata/zpoline.git hook/zpoline
 clone https://github.com/cadenji/foolrenderer.git SoftRenderer/foolrenderer
 clone https://github.com/zauonlok/renderer.git SoftRenderer/renderer
 clone https://github.com/ssloy/tinyrenderer.git SoftRenderer/tinyrenderer
-
+clone https://github.com/keith2018/SoftGLRender.git SoftRenderer/SoftGLRender
+clone https://github.com/keith2018/spvm SoftRenderer/spvm
 
