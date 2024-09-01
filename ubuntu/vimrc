@@ -16,11 +16,7 @@ set autoindent
 set cindent
 set smarttab
 set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:2
-if &term=="xterm"
-    set t_Co=8
-    set t_Sb=^[[4%dm
-    set t_Sf=^[[3%dm
-endif
+"set number "显示行号
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -32,21 +28,6 @@ endif
 " according to the detected filetype.
 if has("autocmd")
   filetype plugin indent on
-
-  "对python文件进行特殊设置
-  autocmd FileType python setlocal et | setlocal sta | setlocal sw=4
-  autocmd FileType python compiler pyunit
-  autocmd FileType python setlocal makeprg=python\ %
 endif
 
-" hot key for ctags
-"map <C-t> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-"map <C-\> :vsp <CR>:exec("ts ".expand("<cword>"))<CR>
-map <silent> <F9> :TlistToggle<cr>
-map <C-p> :tabprevious<CR>
-map <C-n> :tabnext<CR>
-
-"显示行号
-"set number
-
+" 手动安装supertab: https://github.com/ervandew/supertab

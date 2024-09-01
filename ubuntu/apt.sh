@@ -22,7 +22,7 @@ source /etc/os-release
 packages="\
   synaptic
   git gitk
-  vim vim-scripts exuberant-ctags
+  vim vim-scripts vim-addon-manager exuberant-ctags
   tree
   calc
   curl
