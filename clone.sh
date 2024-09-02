@@ -95,3 +95,7 @@ clone https://github.com/ssloy/tinyrenderer.git SoftRenderer/tinyrenderer
 clone https://github.com/keith2018/SoftGLRender.git SoftRenderer/SoftGLRender
 clone https://github.com/keith2018/spvm SoftRenderer/spvm
 
+# GUI
+#--------------------
+clone https://github.com/ocornut/imgui.git gui/imgui
+
