@@ -136,7 +136,6 @@ export PATH=/sbin:$PATH
 
 export PATH=/opt/oprofile/bin:$PATH
 export PATH=/opt:$PATH
-export USE_CCACHE=1
 
 #for pkg-config can find the 32-bit library under 64-bit linux
 export PKG_CONFIG_PATH=/usr/lib/i386-linux-gnu/pkgconfig:$PKG_CONFIG_PATH
