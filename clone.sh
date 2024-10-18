@@ -99,3 +99,8 @@ clone https://github.com/keith2018/spvm SoftRenderer/spvm
 #--------------------
 clone https://github.com/ocornut/imgui.git gui/imgui
 
+# CUDA
+#--------------------
+clone https://github.com/NVIDIA-developer-blog/code-samples.git cuda/cuda-code-samples
+clone https://github.com/vosen/ZLUDA.git cuda/ZLUDA
+clone https://github.com/gpgpu-sim/gpgpu-sim_distribution.git cuda/gpgpu-sim_distribution

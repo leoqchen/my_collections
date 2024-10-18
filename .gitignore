@@ -10,3 +10,4 @@ vulkan/
 SoftRenderer/
 shader/
 gui/
+cuda/
