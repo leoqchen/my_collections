@@ -94,6 +94,7 @@ clone https://github.com/zauonlok/renderer.git SoftRenderer/renderer
 clone https://github.com/ssloy/tinyrenderer.git SoftRenderer/tinyrenderer
 clone https://github.com/keith2018/SoftGLRender.git SoftRenderer/SoftGLRender
 clone https://github.com/keith2018/spvm SoftRenderer/spvm
+clone https://github.com/C-Chads/tinygl.git SoftRenderer/tinygl_C-Chads
 
 if [ ! -d SoftRenderer/TinyGL ]; then
   cd SoftRenderer; tar xf TinyGL-0.4.1.tar.gz; cd ../
