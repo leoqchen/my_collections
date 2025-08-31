@@ -117,23 +117,9 @@ if ! shopt -oq posix; then
 fi
 
 alias mygrep="grep --exclude-dir=\.git --exclude-dir=\.svn --exclude-dir=\.hg --exclude-dir=log --exclude-dir=*/app/build/intermediates --exclude-dir=cmake-build-debug --exclude-dir=obj --exclude=tags --exclude=\.gitignore --exclude=\.class --exclude=*\.o --exclude=*\.d --exclude=*\.so --exclude=*\.apk --exclude=*\.ap_ --exclude=*\gmon.*.txt --color=always"
-alias mygrepc="grep --exclude-dir=\.git --exclude-dir=\.svn --exclude-dir=\.hg --exclude-dir=log --exclude-dir=*/app/build/intermediates --exclude=tags --exclude=\.gitignore --exclude=\.class --exclude=*\.o --exclude=*\.d --exclude=*\.so --exclude=*\.apk --exclude=*\.ap_ --exclude=*\gmon.*.txt  --exclude-dir=MyPhoenix2 --exclude-dir=MyPhoenix3"
-alias mysign="apksigner verify  --print-certs"
-alias myapk2jar="/opt/dex2jar-2.0/d2j-dex2jar.sh"
-alias myjdgui="/opt/jd-gui/jd-gui-1.4.0.jar"
-alias myverify="/home/leochen/tmp/ps2/pcsx2_foo/pcsx2.cutS5/MyPhoenix3/myverify.sh"
-alias ojava="/usr/bin/java"
-alias jiagu360="/usr/bin/java -jar /home/leochen/360jiagubaoVip_linux/jiagu/jiagu.jar"
-alias myjiagu="/home/leochen/tmp/ps2/pcsx2_foo/pcsx2.cutS5/MyPhoenix3/myjiagu.sh"
-alias TestDamonFileLog="/home/leochen/tmp/ps2/pcsx2_foo/pcsx2.cutS5/Lark/damonFile/obj/TestDamonFileLog"
-alias isoMain="/home/leochen/wrk/pcsx2_foo.branch/pcsx2.iso/obj/x86_64/pcsx2/isoMain"
+alias mygrepc="grep -nr --include \*.c --include \*.cpp --exclude glad.c --exclude glew.c"
 
 export PATH=/sbin:$PATH
-
-#让terminal显示英文出错信息
-#export LANG=en_U.UTF-8
-#export LANGUAGE=en_US.UTF-8
-
 export PATH=/opt/oprofile/bin:$PATH
 export PATH=/opt:$PATH
 
@@ -152,15 +138,8 @@ export ANDROID_NDK_ROOT=${ANDROID_NDK_HOME}
 export PATH=${ANDROID_NDK_HOME}:$PATH
 export PATH=/opt/android-studio/jre/bin:$PATH
 export PATH=:~/.local/bin/:$PATH
-#export PATH=${ANDROID_NDK_HOME}/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
-#export PATH=${ANDROID_NDK_HOME}/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin:$PATH
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/SDL2/lib
 
-alias myandroid_debugkeystore="keytool -exportcert -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore"
-alias myandroid_startdebug_firebase_analytics="adb shell setprop debug.firebase.analytics.app"
-alias myandroid_stopdebug_firebase_analytics="adb shell setprop debug.firebase.analytics.app .none."
-
 export HISTTIMEFORMAT="%F %T "
 
-#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
