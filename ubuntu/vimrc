@@ -8,13 +8,13 @@ set smartcase		" Do smart case matching
 "set hidden             " Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes) in terminals
 set hlsearch
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
 set expandtab
+set smarttab
+set shiftwidth=4
 set autoindent
 set cindent
-set smarttab
 set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:2
 "set number "显示行号
 
