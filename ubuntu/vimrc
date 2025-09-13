@@ -17,6 +17,7 @@ set autoindent
 set cindent
 set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:2
 "set number "显示行号
+set ignorecase
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
