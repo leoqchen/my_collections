@@ -25,7 +25,7 @@ if [ ! -e $PerfData ]; then
 fi
 
 
-#perf record -g -p pid
+#perf record -g -e cpu-clock -p pid
 perf script -i $PerfData &> perf.unfold
 $FlameGraph/stackcollapse-perf.pl perf.unfold &> perf.folded
 $FlameGraph/flamegraph.pl perf.folded > perf.svg
