@@ -55,4 +55,11 @@
 - Lisuan是源自于S3 GPU的技术。是我们自研GPU重点需要研究、追上、超越的竞品GPU。工作频率大约是1.8GHz。fp32理论算力虽然宣传上最大可达24TFLOPS，但是实测可知其理论算力应该是12TFLOPS。根据众多公开的游戏评测表明，其实际表现，如果优化的话相当于RTX 3060的80%，如果优化不好就相当于GTX 1060。
 - SNG是基于Imagination FXD IP 为基础，FXD-64-2048 MC6，6核。工作频率大约是1.8GHz。fp32理论算力是22 TFLOPS。每个核的几何能力是4 triangles/cycle。
 
+### 硅前的性能测试
 
+- Imagination GPU IP的CModel叫做CSim。
+- Imagination GPU IP，采用一种名为PDump的测试手段。其原理是，由GPU驱动（DDK）在No Hardware的环境下（No Hardware指没有真实的GPU设备），经上层应用触发，把产生的发给GPU的指令、数据、Control Stream 等等内容，从驱动端Dump出来，变成一种PDump格式。该格式可以喂给GPU CModel CSim、或者GPU RTL的testbench、或者EMU / FPGA平台，即可进行功能仿真、性能仿真。
+- EMU环节的前期，没有CPU、也没有操作系统，此时无法运行GPU驱动DDK，所以，只能以PDump的形式进行仿真。对于此阶段，micro-benchmark的实现需要经过改造才可以，因为没有CPU、操作系统的缘故。
+- EMU环节的中后期，有CPU，有操作系统。但是，因为速度的限制，只能运行小型应用，无法运行大型应用。
+- FGPA环节，处于硅前验证的后期，有CPU，有操作系统。理论上可以尝试运行大型应用。
+ 
